@@ -18,7 +18,7 @@ probOcc = 0.9;
 probFree = 0.35;
 
 % Map grid size in meters. Decrease for better resolution.
-gridSize = 0.5;
+gridSize = 0.1;
 
 % Set up map boundaries and initialize map.
 border = 30;
@@ -60,5 +60,5 @@ for(t=1:size(poses,1))
 	map += mapUpdate;
 	
 	% Plot current map and robot trajectory so far.
-        plot_map(map, mapBox, robPoseMapFrame, poses, laserEndPntsMapFrame, gridSize, offset, t);
+  plot_map(map, mapBox, robPoseMapFrame, poses, laserEndPntsMapFrame, gridSize, offset, t);
 endfor

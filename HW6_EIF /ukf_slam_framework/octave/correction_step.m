@@ -51,7 +51,7 @@ for i = 1:m
         % This corresponds to line 7 on slide 32
         
   for j = 1:2*n+1
-     z_points(:,j) = [sqrt((landmarkXs(j)-sigma_points(1,j))^2 + (landmarkYs(j)-sigma_points(2,j))^2); normalize_angle(atan2(landmarkYs(j)-sigma_points(2,j), landmarkXs(j)-sigma_points(1,j)) - sigma_points(3,j))]
+     z_points(:,j) = [sqrt((landmarkXs(j)-sigma_points(1,j))^2 + (landmarkYs(j)-sigma_points(2,j))^2); normalize_angle(atan2(landmarkYs(j)-sigma_points(2,j), landmarkXs(j)-sigma_points(1,j)) - sigma_points(3,j))];
   endfor
 
 
